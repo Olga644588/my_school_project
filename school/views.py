@@ -5,6 +5,6 @@ def students_list(request):
     template = 'school/students_list.html'
     students = Student.objects.all()
     context = {
-        'students': students
+        'object_list': students 
     }
     return render(request, template, context)
